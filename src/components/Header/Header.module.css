@@ -3,49 +3,88 @@ header {
     justify-content: center;
     height: 800px;
     width: 100%;
-    background-color: gray;
+    position: relative; 
   }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);  
+    z-index: 1;  
+}
   
   .containerOne {
     width: 100%;
     height: 800px;
     overflow: hidden; 
+    background-image: url("../../assets/images/blacwoodCron.jpg");
+    background-color: rgba(0, 0, 0, 1); /* Esto aplica un fondo negro con 50% de opacidad */
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    position: relative; 
     
 }
   
-  .containerOne img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    position: relative;
-    filter: brightness(0.8); /* Reduce el brillo al 50% */
+.containerOne div{
+    margin-bottom: 2rem;
 
 
+}
 
-  }
   
   .containerTwo {
     width: 100%;
-    height: 800px;
-    overflow: hidden; /* Oculta el contenido que desborde del contenedor */
+    height: 900px;
+    overflow: hidden; 
+    background-image: url("../../assets/images/blackwoodBondi.jpg");
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    position: relative; 
   }
   
-  .containerTwo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    filter: brightness(0.8); /* Reduce el brillo al 50% */
-    position: relative;
-
-
-  }
-  
-
-  .positionsBtn{
-    position: absolute;
-    bottom: 175px;
-    right: 300px;
-  }
  
+ 
+
+  .containerTwo div{
+  margin-bottom: 8rem;
+
+  }
+
+  .containerOne, .containerTwo {
+    position: relative; 
+    z-index: 2
+}
+ 
+/**********************************MEDIA QUERIES ***********************************/
+/**********************************MEDIA QUERIES ***********************************/
+/**********************************MEDIA QUERIES ***********************************/
+
+@media(max-width: 900px){
+
+    header {
+        flex-direction: column;
+        height: auto
+      }
+      .containerOne, .containerTwo{
+        height: 800px;
+      }
+      .containerOne div{
+        margin-bottom: 4rem;
+        }
+      
+      .containerTwo div{
+        margin-bottom: 6rem;
+        }
+       
+}
