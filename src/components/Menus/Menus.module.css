@@ -1,0 +1,28 @@
+.menuContainer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 950px;
+    background-color: #bfd3c7;
+    color: white;
+}
+
+.menusCnt{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menusCnt h2{
+    padding: 1rem;
+    font-size: 3rem;
+}
+.menusP{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    font-size: 18px;
+    margin: 3rem 0;
+}
