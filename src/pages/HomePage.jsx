@@ -4,6 +4,7 @@ import Header from "../components/Header/Header"
 import About from "../components/About/About"
 import Menus from '../components/Menus/Menus'
 import WhatsOn from '../components/WhatsOn/WhatsOn'
+import Footer from '../components/Footer/Footer'
 
 const HomePage = () => {
   return (
@@ -13,6 +14,7 @@ const HomePage = () => {
     <About />
     <Menus/>
     <WhatsOn />
+    <Footer/>
     </>
   )
 }

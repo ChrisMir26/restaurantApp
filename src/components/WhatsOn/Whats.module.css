@@ -57,6 +57,11 @@
 
 @media(max-width:900px){
 
+    .whatsContainer{
+        height: 1300px;
+    ;
+    }
+
     .whatsImgBox{
        flex-direction: column;
         justify-content: space-around;
