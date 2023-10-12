@@ -26,3 +26,23 @@
     font-size: 18px;
     margin: 3rem 0;
 }
+
+.menusP p:hover {
+    cursor: pointer;
+}
+
+.optionActive {
+    text-decoration: underline;
+}
+
+  .menusBox {
+    transition: opacity 0.5s, transform 0.5s; 
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+  .menusBox.transition-out {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  
