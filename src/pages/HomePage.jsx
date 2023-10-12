@@ -5,6 +5,7 @@ import About from "../components/About/About"
 import Menus from '../components/Menus/Menus'
 import WhatsOn from '../components/WhatsOn/WhatsOn'
 import Footer from '../components/Footer/Footer'
+import Contact from '../components/Contact/Contact'
 
 const HomePage = () => {
   return (
@@ -14,6 +15,7 @@ const HomePage = () => {
     <About />
     <Menus/>
     <WhatsOn />
+    <Contact/>
     <Footer/>
     </>
   )

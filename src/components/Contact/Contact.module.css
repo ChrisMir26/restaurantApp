@@ -1,0 +1,45 @@
+.contactContainer{
+    background-color: #637c78;
+    height: 715px;
+    width: 100%;
+    margin-top: 4rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.contactCnt{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactCnt h2 {
+    font-size: 36px;
+}
+
+.contactPBox{
+    display: flex;
+    gap: 3rem;
+    margin-top: 2rem;
+;
+}
+
+.contactPBox p{
+    font-size: 18px;
+}
+
+.contactPBox p:hover {
+    cursor: pointer;
+
+}
+
+.contactActive{
+    text-decoration: underline;
+}
+
+.contactPropBox{
+ width: 100%;   
+}
