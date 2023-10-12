@@ -52,3 +52,24 @@
     text-decoration: none;
     color: white;
 }
+
+
+
+
+/******************************  MEDIA QUERIES*********************************************/
+/******************************  MEDIA QUERIES*********************************************/
+/******************************  MEDIA QUERIES*********************************************/
+
+@media(max-width:900px){
+
+   
+    
+    .cronImages{
+    
+      flex-direction: column;
+       align-items: center;
+       justify-content: center;
+        width: 100%;
+        height: auto;
+    }
+}
