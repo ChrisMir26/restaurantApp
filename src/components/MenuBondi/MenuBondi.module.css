@@ -1,4 +1,54 @@
 .bondiCnt{
 
-    width: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bondiCnt p {
+
+    width: 65%;
+    letter-spacing: 1px;
+    line-height: 1.1rem;
+}
+.bondiImages{
+    
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+
+}
+
+.bondiImagesOne img, .bondiImagesTwo img, .bondiImagesThree img{
+    height: 500px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.bondiImagesOne,.bondiImagesTwo,.bondiImagesThree {
+    position: relative;
+}
+
+ .bondiImagesP a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+.bondiImagesP{
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    top: 225px;
+    right: 0px;
+}
+
+
+.bondiImagesP a {
+    text-decoration: none;
+    color: white;
 }

@@ -1,0 +1,54 @@
+.cronContainer{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cronContainer p {
+
+    width: 65%;
+    letter-spacing: 1px;
+    line-height: 1.1rem;
+}
+.cronImages{
+    
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+
+}
+
+.cronImagesone img, .cronImagesTwo img{
+    height: 500px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.cronImagesone,.cronImagesTwo {
+    position: relative;
+}
+
+.cronImagesP a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+.cronImagesP{
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    top: 225px;
+    right: 0px;
+}
+
+.cronImagesP a {
+    text-decoration: none;
+    color: white;
+}

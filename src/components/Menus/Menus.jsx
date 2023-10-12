@@ -5,6 +5,7 @@ import MenuCronulla from '../MenuCronulla/MenuCronulla'
 import Button from '../Button/Button'
 
 const Menus = () => {
+  
   return (
     <div className={styleMenu.menuContainer}>
     <div className={styleMenu.menusCnt}>
@@ -14,9 +15,8 @@ const Menus = () => {
             <p>Cronulla</p>
         </div>
         <div className={styleMenu.menusBox} >
-        <MenuBondi/>
-{/*         <MenuCronulla/> 
- */}         </div>
+         <MenuCronulla/> 
+        </div>
 
          <Button button="book now"/>
 
