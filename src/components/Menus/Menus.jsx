@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import styleMenu from "./Menus.Module.css"
+import styleMenu from "./Menus.module.css"
 import MenuBondi from '../MenuBondi/MenuBondi'
 import MenuCronulla from '../MenuCronulla/MenuCronulla'
 import Button from '../Button/Button'
