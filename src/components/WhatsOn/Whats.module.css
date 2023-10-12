@@ -1,0 +1,70 @@
+.whatsContainer{
+    background-color:#ffffff ;
+    height: 680px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+;
+}
+
+
+
+.whatsCnt h2{
+    font-size: 3rem;
+    color: #637d79;
+    margin-bottom: 2rem;
+}
+
+.whatsImgBox{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.whatsImgOne, .whatsImgTwo{
+    height: 300px;
+    width: 400px;
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.whatsImgOne img,.whatsImgTwo img{
+    height: 500px;
+    width: 400px;
+    object-fit: contain;
+    display: block
+    ;
+}
+
+.whatsImgOne p,.whatsImgTwo p{
+    color: #637d79;
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+
+
+/******************************  MEDIA QUERIES*********************************************/
+/******************************  MEDIA QUERIES*********************************************/
+/******************************  MEDIA QUERIES*********************************************/
+
+@media(max-width:900px){
+
+    .whatsImgBox{
+       flex-direction: column;
+        justify-content: space-around;
+        gap: 14rem;
+        height: auto;
+        
+    }
+    .whatsImgOne{
+        margin-bottom: 3rem;
+    }
+}
