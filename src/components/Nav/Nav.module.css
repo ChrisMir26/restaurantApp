@@ -10,10 +10,15 @@
 .nav h1 {
   margin-left: 2rem;
   color: #637d79;
+
+}
+
+.nav h1 a {
+  text-decoration: none !important;
 }
 
 .btnContainer {
-  width: 50%;
+  width: 100%;
   display: flex;
   justify-content: end;
   align-items: center;
@@ -89,7 +94,7 @@
   }
 }
 
-@media (max-width: 9000px) {
+@media (max-width: 900px) {
   .icono {
     display: block;
     z-index: 3;

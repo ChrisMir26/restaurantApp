@@ -5,6 +5,7 @@ import { FaCaretDown, FaCaretUp } from "react-icons/fa";
 import Hamburger from "hamburger-react";
 import DropdowMenu from "../DropdownMenu/DropdownMenu";
 import { FaBars } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +22,9 @@ const Nav = () => {
 
   return (
     <nav className={navStyles.nav}>
-      <h1>BLACKWOOD</h1>
+     <Link to="/">
+       <h1>BLACKWOOD</h1>
+       </Link>
 
       <div className={navStyles.btnContainer}>
         <p>
