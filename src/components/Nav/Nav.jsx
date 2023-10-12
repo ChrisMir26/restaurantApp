@@ -1,11 +1,28 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Button from "../Button/Button";
 import navStyles from "./Nav.module.css";
+import { FaCaretDown, FaCaretUp } from "react-icons/fa";
+import Hamburger from "hamburger-react";
+import DropdowMenu from "../DropdownMenu/DropdownMenu";
+import { FaBars } from "react-icons/fa";
 
 const Nav = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isOpenSub, setIsOpenSub] = useState(false);
+  const dropdownRef = useRef(null);
+
+  const setToggler = () => {
+    setIsOpen(!isOpen);
+  };
+  const setTogglerSub = () => {
+    setIsOpenSub(!isOpenSub);
+    console.log(isOpenSub);
+  };
+
   return (
     <nav className={navStyles.nav}>
       <h1>BLACKWOOD</h1>
+
       <div className={navStyles.btnContainer}>
         <p>
           <a href="">About</a>
@@ -13,9 +30,12 @@ const Nav = () => {
         <p>
           <a href="">Menus</a>
         </p>
+
         <div className={navStyles.dropdown}>
           <p className={navStyles.dropbtn}>
-            <a href="">Locations</a>
+            <a href="">
+              Locations <FaCaretDown />
+            </a>
           </p>
           <div className={navStyles.dropdownContent}>
             <a href="#">Cronulla</a>
@@ -33,6 +53,19 @@ const Nav = () => {
         </p>
         <Button button="Bookings" />
       </div>
+      <div className={navStyles.icono} onClick={setToggler}>
+        <FaBars size={22} color="#637d79" />
+      </div>
+
+      {open && (
+        <div ref={dropdownRef}>
+          <DropdowMenu
+            isOpen={isOpen}
+            isOpenSub={isOpenSub}
+            setTogglerSub={setTogglerSub}
+          />
+        </div>
+      )}
     </nav>
   );
 };

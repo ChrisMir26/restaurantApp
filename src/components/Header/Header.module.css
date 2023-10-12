@@ -4,6 +4,8 @@ header {
     height: 800px;
     width: 100%;
     position: relative; 
+    /* Oculta el scroll horizontal */
+
   }
 
   .overlay {
@@ -35,13 +37,12 @@ header {
 .containerOne div{
     margin-bottom: 2rem;
 
-
 }
 
   
   .containerTwo {
     width: 100%;
-    height: 900px;
+    height: 800px;
     overflow: hidden; 
     background-image: url("../../assets/images/blackwoodBondi.jpg");
     background-repeat: none;
@@ -50,6 +51,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: end;
+    overflow-x: hidden;
     position: relative; 
   }
   
@@ -57,13 +59,14 @@ header {
  
 
   .containerTwo div{
-  margin-bottom: 8rem;
+  margin-bottom: 2rem;
+
 
   }
 
   .containerOne, .containerTwo {
     position: relative; 
-    z-index: 2
+    z-index:1
 }
  
 /**********************************MEDIA QUERIES ***********************************/
