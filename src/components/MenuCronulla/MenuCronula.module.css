@@ -5,8 +5,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #bfd4c6;
 }
 
+.heroTitle{
+    color: white;
+    margin: 2rem 0;
+}
 .cronContainer p {
 
     width: 65%;

@@ -4,9 +4,11 @@ import bondiBrunch from "../../assets/images/bondiBrunch.jpg";
 import bondiDinner from "../../assets/images/bondiDinner.jpg";
 import bondiWines from "../../assets/images/bondiWines.jpg";
 
-const MenuBondi = () => {
+const MenuBondi = ({title}) => {
   return (
     <div className={bondiStyle.bondiCnt}>
+            {title ? <h1 className={bondiStyle.heroTitle} >{title}</h1> : ""}
+
       <p>
         With spacious, inviting interiors and plenty of outdoor seating,
         Blackwood Bondi transitions easily from day into night, offering the

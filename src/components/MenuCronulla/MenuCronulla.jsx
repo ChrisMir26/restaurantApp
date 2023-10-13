@@ -3,9 +3,10 @@ import CronullaStyle from "./MenuCronula.module.css";
 import cronullaBrunch from "../../assets/images/brunchCronulla.jpg";
 import cronullaDrink from "../../assets/images/drinkCronulla.jpg";
 
-const MenuBondi = () => {
+const MenuCronolla = ({title}) => {
   return (
     <div className={CronullaStyle.cronContainer}>
+      {title ? <h1 className={CronullaStyle.heroTitle} >{title}</h1> : ""}
       <p>
         Join us for breakfast, brunch or lunch seven days a week at one of
         Cronulla’s most popular destinations, named after Blackwoods Beach, a
@@ -36,4 +37,4 @@ const MenuBondi = () => {
   );
 };
 
-export default MenuBondi;
+export default MenuCronolla;
