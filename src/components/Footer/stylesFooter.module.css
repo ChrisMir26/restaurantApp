@@ -40,8 +40,9 @@ h2,p{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        margin-top: 3rem;
         padding: 2rem;
+        margin-bottom: -2.5rem;
+
     }
 
     .footerContOne h2, .footerContTwo h2, .footerContThree h2{
