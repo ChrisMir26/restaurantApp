@@ -6,6 +6,8 @@ import { bondiData, cronullaData } from "../../helpers/info"
 const Contact = () => {
 
   const [selectedContact, setSelectedContact] = useState(bondiData)
+      const [isVisible, setIsVisible] = useState(true);
+
 
   const handleContactClick = (contactData) => {
     setSelectedContact(contactData);
@@ -20,7 +22,7 @@ const Contact = () => {
           <p onClick={() => handleContactClick(cronullaData)} className={`${selectedContact === cronullaData ? contactStyle.contactActive : ""} ${contactStyle.contacts}`}>Cronulla</p>
         </div>
         <div className={contactStyle.contactPropBox}>
-          <ContactEach data={selectedContact} />
+          <ContactEach data={selectedContact} isVisible={isVisible} />
         </div>
       </div>
     </div>
