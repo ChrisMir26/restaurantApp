@@ -8,7 +8,7 @@ const WhatsOn = () => {
   return (
     <div className={WhatsStyle.whatsContainer}>
       <div className={WhatsStyle.whatsCnt}> 
-        <h2>Whatson</h2>
+        <h2>What's on</h2>
         <div className={WhatsStyle.whatsImgBox}>
           <div className={WhatsStyle.whatsImgOne}>
             <img src={whatsonsOne} alt="whatson one pic" srcset="" />
