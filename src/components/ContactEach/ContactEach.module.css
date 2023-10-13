@@ -22,3 +22,22 @@
     background-color: blue;
 }
 
+
+/* ******************************** MEDIA QUERIES ************************************/
+/* ******************************** MEDIA QUERIES ************************************/
+/* ******************************** MEDIA QUERIES ************************************/
+
+
+@media(max-width:900px){
+    .container{
+        flex-direction: column;
+    
+    }
+
+    .mapsCnt{
+        height: 400px;
+        width: 50%;
+        background-color: blue;
+        margin-top: 2rem;
+    }
+}
