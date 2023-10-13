@@ -1,0 +1,12 @@
+.imgCnt{
+    max-height: 840px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.imgCnt img {
+    height: 100%;
+    width: 100%;
+}

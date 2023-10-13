@@ -3,6 +3,12 @@
    display: flex;
     justify-content: space-between;
     margin-top: 5rem;
+    background-color: #637d79;;
+
+}
+
+.containerHero{
+    text-align: center;
 
 }
 

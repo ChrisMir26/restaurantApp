@@ -29,12 +29,12 @@ const Nav = () => {
       </Link>
 
       <div className={navStyles.btnContainer}>
-        <p >
+        <p>
           <Link to="/about">About</Link>
         </p>
         <p>
-        <Link to="/menu">
-          <a href="">Menus</a>
+          <Link to="/menu">
+            <a href="">Menus</a>
           </Link>
         </p>
 
@@ -45,20 +45,26 @@ const Nav = () => {
             </a>
           </p>
           <div className={navStyles.dropdownContent}>
-            <a href="#">Cronulla</a>
-            <a href="#">Bondi</a>
+            <Link to="/cronulla-location">
+              <a href="#">Cronulla</a>
+            </Link>
+            <Link to="/bondi-location">
+              <a href="#">Bondi</a>
+            </Link>
           </div>
         </div>
         <p>
           <a href="">Event</a>
         </p>
         <p>
-        <Link to="/whats-on">
-          <a href="">Whats On</a>
+          <Link to="/whats-on">
+            <a href="">Whats On</a>
           </Link>
         </p>
         <p>
-          <a href="">Contact</a>
+          <Link to="/contact">
+            <a href="">Contact</a>
+          </Link>
         </p>
         <Button button="Bookings" />
       </div>
