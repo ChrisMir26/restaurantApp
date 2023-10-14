@@ -29,6 +29,32 @@
   height: 100%;
   object-fit: cover;
 }
+
+/* Estilo para ocultar los controles de reproducción y otros controles */
+.video-responsive video::-webkit-media-controls {
+  display: none !important;
+}
+
+.video-responsive video::-webkit-media-controls-enclosure {
+  display: none !important;
+}
+
+.video-responsive video::-webkit-media-fullscreen-button {
+  display: none !important;
+}
+
+/* Estilo para que el video sea responsive */
+.video-responsive video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Establece el fondo a negro para evitar que el video se vea a través de los controles ocultos */
+.video-responsive video::cue {
+  background: black;
+}
+
 .eventForm {
   width: 50%;
   padding: 3rem;
@@ -171,7 +197,7 @@ select {
 
   .eventForm {
     width: 100%;
-    height: 70%
+    height: 100%
   }
 
   form{

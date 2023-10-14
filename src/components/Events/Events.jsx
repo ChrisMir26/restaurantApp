@@ -10,7 +10,9 @@ const Events = () => {
       <div className={eventStyle.topBox}>
         <div className={eventStyle.eventVideo}>
           <video
-            className={eventStyle.eventVid}
+/*             className={eventStyle.eventVid}
+ */            
+            className={`${eventStyle.eventVid} video-responsive`}
             src={videoBar}
             autoPlay
             loop
