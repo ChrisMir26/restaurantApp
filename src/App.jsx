@@ -8,6 +8,7 @@ import WhatsOnPage from './pages/WhatsOnPage'
 import ContactPage from './pages/ContactPage'
 import CronLocation from './pages/CronLocation'
 import BonLocation from './pages/BonLocation'
+import EventsPage from './pages/EventsPage'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
       <Route path="/contact" element={<ContactPage/>} />
       <Route path="/cronulla-location" element={<CronLocation/>} />
       <Route path="/bondi-location" element={<BonLocation/>} />
+      <Route path="/event" element={<EventsPage/>} />
 
 
 

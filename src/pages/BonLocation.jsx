@@ -12,7 +12,7 @@ const BonLocation = () => {
         <>
 
             <Nav />
-            <ImgBackground />
+            <ImgBackground place ={"bondi"}/>
             <About />
             <MenuBondi  title={"MENU"}/>
             <Footer  />

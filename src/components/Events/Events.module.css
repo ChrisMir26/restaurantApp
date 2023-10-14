@@ -1,0 +1,388 @@
+.eventContainer {
+  background-color: #637d79;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 1200px;
+
+
+}
+
+.topBox {
+  display: flex;
+  justify-content: space-between;
+  max-height: 650px;
+  height: 100%;
+  width: 100%;
+}
+
+.eventVideo {
+  background-color: grey;
+  width: 50%;
+  height: 650px;
+  text-align: center;
+}
+
+.eventVid{
+  width: 100%;
+  max-height: 650px;
+  height: 100%;
+  object-fit: cover;
+}
+.eventForm {
+  width: 50%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.eventText p{
+    margin: 0.2rem 0;
+}
+.eventForm h2 {
+  margin-bottom: 1.5rem;
+  font-size: 40px;
+}
+
+.eventText p:first-child {
+  margin-bottom: 1.5rem;
+}
+
+.eventText p:last-child {
+    font-weight: bolder;
+    margin: 2rem 0;
+  }
+
+
+form input {
+    display: inline-block;
+    padding: 0.5rem;
+    max-width: 300px;
+    width: 100%;
+    margin: 0.2rem;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    
+}
+
+input::placeholder {
+    color: white; /* Cambia el color a tu preferencia */
+}
+
+select {
+    display: inline-block;
+    padding: 0.5rem;
+    max-width: 300px;
+    width: 100%;
+    margin: 0.2rem;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+}
+
+
+
+.btn{
+    padding: 0.2rem;
+}
+
+/**********************************BOTTOM BOX ***********************************/
+/**********************************BOTTOM BOX ***********************************/
+
+
+
+.bottomBox{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 600px;
+}
+
+.bottomBoxLeft{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    background-color: #bfd4c6;
+
+}
+
+.bottomBoxLeft h2{
+    margin: 1rem 2rem;
+}
+
+.bottomBoxLeft p{
+    margin: 0.8rem 2rem;
+    width: 80%;
+}
+
+.bottomBoxLeft div{
+    margin: 0.8rem 2rem;
+
+}
+
+
+
+.bottomBoxRight{
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+}
+
+.bottomBoxRight img{
+    object-fit: cover;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+
+}
+
+/**********************************MEDIA QUERIES ***********************************/
+/**********************************MEDIA QUERIES ***********************************/
+/**********************************MEDIA QUERIES ***********************************/
+
+@media(max-width:900px){
+  .eventContainer {
+  
+    height: auto
+  
+  }
+  
+  .topBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 1100px;
+    height: 100%;
+    width: 100%;
+  }
+
+  .eventVideo {
+    background-color: grey;
+    width: 100%;
+    height: 450px;
+    text-align: center;
+  }
+
+  .eventForm {
+    width: 100%;
+    height: 70%
+  }
+
+  form{
+    display: flex;
+    flex-direction: column;
+  }
+
+  /**********************************BOTTOM BOX ***********************************/
+/**********************************BOTTOM BOX ***********************************/
+
+  .bottomBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 1200px;
+
+}
+.bottomBoxLeft{
+  width: 100%;
+  height: 600px;
+  flex-direction: column;
+}
+.bottomBoxLeft h2{
+  margin: 1rem 2rem;
+}
+
+.bottomBoxRight{
+  height: 600px;
+}
+
+.bottomBoxRight img{
+  height: 100%;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .eventContainer {
+  background-color: #637d79;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 1200px;
+  max-height: 2000px;
+
+}
+
+.topBox {
+  display: flex;
+  justify-content: space-between;
+  max-height: 650px;
+  height: 100%;
+  width: 100%;
+}
+
+.eventVideo {
+  background-color: grey;
+  width: 50%;
+  height: 650px;
+  text-align: center;
+}
+
+.eventVid{
+  width: 100%;
+  max-height: 650px;
+  height: 100%;
+  object-fit: cover;
+}
+.eventForm {
+  width: 50%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.eventText p{
+    margin: 0.2rem 0;
+}
+.eventForm h2 {
+  margin-bottom: 1.5rem;
+  font-size: 40px;
+}
+
+.eventText p:first-child {
+  margin-bottom: 1.5rem;
+}
+
+.eventText p:last-child {
+    font-weight: bolder;
+    margin: 2rem 0;
+  }
+
+
+form input {
+    display: inline-block;
+    padding: 0.5rem;
+    max-width: 300px;
+    width: 100%;
+    margin: 0.2rem;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    
+}
+
+input::placeholder {
+    color: white; /* Cambia el color a tu preferencia 
+}
+
+select {
+    display: inline-block;
+    padding: 0.5rem;
+    max-width: 300px;
+    width: 100%;
+    margin: 0.2rem;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+}
+
+
+
+.btn{
+    padding: 0.2rem;
+}
+
+/**********************************BOTTOM BOX ***********************************/
+/**********************************BOTTOM BOX ***********************************/
+
+
+
+/* .bottomBox{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 600px;
+}
+
+.bottomBoxLeft{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    background-color: #bfd4c6;
+
+}
+
+.bottomBoxLeft h2{
+    margin: 1rem 2rem;
+}
+
+.bottomBoxLeft p{
+    margin: 0.8rem 2rem;
+    width: 80%;
+}
+
+.bottomBoxLeft div{
+    margin: 0.8rem 2rem;
+
+}
+
+
+
+.bottomBoxRight{
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+}
+
+.bottomBoxRight img{
+    object-fit: cover;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+
+} */
+
+/**********************************MEDIA QUERIES ***********************************/
+/**********************************MEDIA QUERIES ***********************************/
+/**********************************MEDIA QUERIES ***********************************/
+
+/* @media(max-width:900px){
+  .eventContainer {
+  
+    height: 1500px
+  
+  }
+  
+  .topBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 650px;
+    height: 100%;
+    width: 100%;
+  }
+}  */
