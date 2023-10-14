@@ -183,7 +183,7 @@ select {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-height: 1100px;
+    max-height: 1300px;
     height: 100%;
     width: 100%;
   }
@@ -196,8 +196,10 @@ select {
   }
 
   .eventForm {
+    min-height:650px ;
+    max-height:850px ;
     width: 100%;
-    height: 100%
+
   }
 
   form{
