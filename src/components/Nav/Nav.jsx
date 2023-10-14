@@ -40,9 +40,9 @@ const Nav = () => {
 
         <div className={navStyles.dropdown}>
           <p className={navStyles.dropbtn}>
-            <a href="">
+           
               Locations <FaCaretDown />
-            </a>
+          
           </p>
           <div className={navStyles.dropdownContent}>
             <Link to="/cronulla-location">
@@ -54,7 +54,10 @@ const Nav = () => {
           </div>
         </div>
         <p>
+        <Link to="/event">
+
           <a href="">Event</a>
+          </Link>
         </p>
         <p>
           <Link to="/whats-on">
