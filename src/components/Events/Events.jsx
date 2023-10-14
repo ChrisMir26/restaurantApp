@@ -17,7 +17,9 @@ const Events = () => {
             autoPlay
             loop
             muted
-            height="360"
+            playsInline
+            controls
+            controlsList="nodownload" // Evita la descarga del video
           ></video>
         </div>
         <div className={eventStyle.eventForm}>
