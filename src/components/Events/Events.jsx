@@ -4,6 +4,8 @@ import Button from "../Button/Button";
 import blacwoodCron from "../../assets/images/blacwoodCron.jpg";
 import videoBar from "../../assets/video/video.mp4";
 import Message from "../Message/Message";
+import emailjs from '@emailjs/browser'
+
 
 const Events = () => {
   const [msg, setMsg] = useState({message:"",error:true})
@@ -54,11 +56,32 @@ const Events = () => {
     if (data.phone.length < 8) return setMsg({message:"Phone should be at least 8 characters",error:true})
     if(data.eventType === "") return setMsg({message:"Event type cannot be empty",error:true})
 
-    setMsg({message:"Message sent, thank you!", error:false})
-    setData({name: "",
-    email: "",
-    phone: "",
-    eventType: ""})
+    console.log(`soi eventipe`,data.eventType)
+      emailjs.send(
+        'service_seaveid',
+         'template_brrf3os',{
+            name:data.name,
+            email:data.email,
+            phone:data.phone,
+            eventType: data.eventType
+    }, 'oJf8jf2UQA-NF2ZUf')
+    .then(
+      () => {
+           setMsg({message:"Message sent, thank you!", error:false})
+           setData({name: "",
+           email: "",
+           phone: "",
+           eventType: ""})
+      },
+      (error) => {
+        setMsg({message:error.message, error:true})
+        ;
+        console.error(error);
+      }
+    );
+
+    
+   
 
   }
 

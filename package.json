@@ -10,9 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@react-google-maps/api": "^2.19.2",
     "@reduxjs/toolkit": "^1.9.7",
     "@stripe/stripe-js": "^2.1.7",
+    "emailjs": "^4.0.3",
     "hamburger-react": "^2.5.0",
     "next-auth": "^4.23.2",
     "react": "^18.2.0",
