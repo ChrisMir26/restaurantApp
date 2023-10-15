@@ -10,6 +10,8 @@
 .nav h1 {
   margin-left: 2rem;
   color: #637d79;
+  font-size: 2rem
+
 
 }
 
@@ -111,6 +113,7 @@
     margin-right:25px;
 
   }
+  
 
   .btnContainer {
     display: none;

@@ -97,6 +97,8 @@ input::placeholder {
     color: white; /* Cambia el color a tu preferencia */
 }
 
+
+
 select {
     display: inline-block;
     padding: 0.5rem;
@@ -157,7 +159,6 @@ select {
 .bottomBoxRight{
     width: 100%;
     height: 100%;
-    background-color: blue;
 }
 
 .bottomBoxRight img{
