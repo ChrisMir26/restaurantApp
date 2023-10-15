@@ -17,7 +17,6 @@ const Events = () => {
   });
 
   useEffect(()=>{
-    console.log("soi messageeee",msg)
     setTimeout(()=>{
         setMsg({
             message:"",
@@ -56,7 +55,6 @@ const Events = () => {
     if (data.phone.length < 8) return setMsg({message:"Phone should be at least 8 characters",error:true})
     if(data.eventType === "") return setMsg({message:"Event type cannot be empty",error:true})
 
-    console.log(`soi eventipe`,data.eventType)
       emailjs.send(
         'service_seaveid',
          'template_brrf3os',{

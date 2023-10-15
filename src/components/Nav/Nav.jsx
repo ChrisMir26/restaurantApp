@@ -69,7 +69,9 @@ const Nav = () => {
             <a href="">Contact</a>
           </Link>
         </p>
+        <Link to="/booking">
         <Button button="Bookings" />
+        </Link>
       </div>
       <div className={navStyles.icono} onClick={setToggler}>
         <FaBars size={22} color="#637d79" />

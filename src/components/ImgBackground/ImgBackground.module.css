@@ -10,3 +10,15 @@
     height: 100%;
     width: 100%;
 }
+
+
+@media(max-width:900px){
+
+    .imgCnt{
+    max-height: 540px;
+    height: 500%;
+    width: 100%;
+    overflow: hidden;
+    
+}
+}

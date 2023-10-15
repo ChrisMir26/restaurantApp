@@ -9,6 +9,7 @@ import ContactPage from './pages/ContactPage'
 import CronLocation from './pages/CronLocation'
 import BonLocation from './pages/BonLocation'
 import EventsPage from './pages/EventsPage'
+import BookingPage from './pages/BookingPage'
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
       <Route path="/cronulla-location" element={<CronLocation/>} />
       <Route path="/bondi-location" element={<BonLocation/>} />
       <Route path="/event" element={<EventsPage/>} />
+      <Route path="/booking" element={<BookingPage/>} />
 
 
 
