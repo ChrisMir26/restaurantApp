@@ -1,5 +1,5 @@
 import express from "express"
-import { getBookings } from "../controllers/bookingControllers.js"
+import { deleteBooking, editBooking, getBookings, saveBooking, searchAvailability } from "../controllers/bookingControllers.js"
 
 
 
@@ -7,6 +7,10 @@ const router = express.Router()
 
 router
         .get("/",getBookings)
+        .post("/",saveBooking)
+        .put("/:id",editBooking)
+        .delete("/:id",deleteBooking)
+        .post("/check",searchAvailability)
 
 
 
