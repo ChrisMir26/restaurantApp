@@ -17,6 +17,6 @@ const guestSchema = mongoose.Schema({
 })
 
 
-const Guest = mongoose.model("Patients", patientsSchema)
+const Guest = mongoose.model("Guest", guestSchema)
 
 export default Guest

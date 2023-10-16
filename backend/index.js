@@ -2,6 +2,8 @@ import express  from "express";
 import dotenv from "dotenv"
 import cors from "cors"
 import { run } from "./config/db.js";
+import guestRouter from "./routes/guestRoute.js"
+import bookingsRouter from "./routes/bookingRoute.js"
 
 const app = express()
 
@@ -11,6 +13,11 @@ dotenv.config()
 
 
 app.use(cors())
+
+
+
+app.use("/api/guest",guestRouter)
+app.use("/api/bookings", bookingsRouter )
 
 
 const PORT = 4001
